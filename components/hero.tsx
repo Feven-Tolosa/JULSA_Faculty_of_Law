@@ -41,7 +41,7 @@ export default function Hero() {
       <Navbar />
 
       {/* Main content */}
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-14 px-6 pb-24 pt-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-32 lg:pt-20">
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-14 px-6 pb-24 pt-28 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pb-32 lg:pt-32">
         {/* Copy */}
         <div className="flex flex-col items-start text-left">
           <div
