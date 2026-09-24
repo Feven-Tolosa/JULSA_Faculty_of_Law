@@ -3,6 +3,7 @@ import About from '@/components/about'
 import Events from '@/components/events'
 import MootCourt from '@/components/mootcourt'
 import Members from '@/components/members'
+import Contact from '@/components/contact'
 import Footer from '@/components/footer'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Events />
       <MootCourt />
       <Members />
+      <Contact />
       <Footer />
     </main>
   )
