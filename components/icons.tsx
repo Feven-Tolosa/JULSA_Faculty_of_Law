@@ -99,3 +99,21 @@ export function UsersIcon({ className }: { className?: string }) {
     </svg>
   );
 }
+
+export function AwardIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="8" r="6" />
+      <path d="M15.5 13 17 22l-5-3-5 3 1.5-9" />
+    </svg>
+  );
+}
