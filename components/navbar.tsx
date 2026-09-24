@@ -1,18 +1,29 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { NAV_LINKS } from "./links";
 import { ScalesIcon } from "./icons";
 
-export const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Events", href: "#events" },
-  { label: "Moot Court", href: "#moot-court" },
-  { label: "Members", href: "#members" },
-  { label: "Contact", href: "#contact" },
-];
-
 export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="fixed inset-x-0 top-0 z-50 w-full border-b border-white/5 bg-night-950/80 backdrop-blur-xl">
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <a href="#" className="group flex items-center gap-3">
+    <header
+      className={`fixed inset-x-0 top-0 z-50 w-full transition-all duration-300 ${
+        scrolled
+          ? "border-b border-white/10 bg-night-950/90 shadow-lg shadow-black/30 backdrop-blur-xl"
+          : "border-b border-transparent bg-night-950/40 backdrop-blur-md"
+      }`}
+    >
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-4 px-6 py-4 lg:px-8">
+        <a href="#" className="group flex shrink-0 items-center gap-3">
           <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-gold-400/40 bg-gold-400/10 text-gold-300 transition-colors group-hover:bg-gold-400/20">
             <ScalesIcon className="h-6 w-6" />
           </span>
@@ -40,13 +51,13 @@ export default function Navbar() {
 
         <a
           href="#join"
-          className="hidden rounded-full border border-gold-400/50 bg-gold-400/10 px-5 py-2.5 text-sm font-semibold text-gold-200 transition-all hover:bg-gold-400 hover:text-night-950 sm:inline-flex"
+          className="hidden shrink-0 rounded-full border border-gold-400/50 bg-gold-400/10 px-5 py-2.5 text-sm font-semibold text-gold-200 transition-all hover:bg-gold-400 hover:text-night-950 sm:inline-flex"
         >
           Join Us
         </a>
         <a
           href="#join"
-          className="inline-flex items-center gap-2 rounded-full bg-gold-400 px-4 py-2 text-xs font-semibold text-night-950 transition-colors hover:bg-gold-300 sm:hidden"
+          className="inline-flex shrink-0 items-center gap-2 rounded-full bg-gold-400 px-4 py-2 text-xs font-semibold text-night-950 transition-colors hover:bg-gold-300 sm:hidden"
         >
           Join Us
         </a>

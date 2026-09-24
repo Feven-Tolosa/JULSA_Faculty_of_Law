@@ -1,5 +1,5 @@
 import { ScalesIcon } from "./icons";
-import { NAV_LINKS } from "./navbar";
+import { NAV_LINKS } from "./links";
 
 const PROGRAM_LINKS = [
   { label: "Moot Court", href: "#moot-court" },
