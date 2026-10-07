@@ -23,10 +23,17 @@ const PILLARS = [
   },
 ]
 
-export default function About() {
+export default function About({
+  standalone = false,
+}: {
+  standalone?: boolean
+}) {
+  const Heading = standalone ? 'h1' : 'h2'
+
   return (
     <section
       id='about'
+      aria-labelledby='about-title'
       className='relative isolate scroll-mt-24 overflow-hidden bg-night-950 py-24 text-cream-50 lg:py-32'
     >
       {/* Ambient glow */}
@@ -54,13 +61,16 @@ export default function About() {
               About JULSA
             </div>
 
-            <h2 className='mt-6 font-display text-4xl font-bold leading-[1.12] tracking-tight sm:text-5xl'>
+            <Heading
+              id='about-title'
+              className='mt-6 font-display text-4xl font-bold leading-[1.12] tracking-tight sm:text-5xl'
+            >
               Where We Build{' '}
               <span className='bg-gradient-to-r from-gold-200 via-gold-400 to-gold-300 bg-clip-text text-transparent'>
                 Tomorrow&rsquo;s
               </span>{' '}
               Legal Minds
-            </h2>
+            </Heading>
 
             <p className='mt-7 max-w-xl text-lg leading-relaxed text-cream-100/70'>
               The Jimma University Law Students&rsquo; Association is a
