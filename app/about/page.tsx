@@ -6,6 +6,7 @@ import {
   UsersIcon,
 } from '@/components/icons'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const OBJECTIVES = [
   'Promote academic excellence and support students in their legal education.',
@@ -65,76 +66,179 @@ const LEADERSHIP = [
   {
     role: 'President',
     name: 'Natan Tadese',
-    image: '/leadership/presidentNatan.jpg',
+    image: '/image/leadership/presidentNatan.jpg',
     description: 'Founder and former president of JULSA',
     featured: true,
   },
   {
     role: 'Vice President',
-    name: 'Amanu’el Abera',
-    image: '/leadership/vicePresidentAmanuel.jpg',
-    description:
-      'Supports the President and contributes to the effective coordination of JULSA activities.',
+    name: 'Tolera Dufera',
+    image: '/image/leadership/Tolera.jpg',
+    description: 'Former president of JULSA',
     featured: false,
   },
   {
-    role: 'Secretary General',
-    name: 'Saron Birhanu',
-    description:
-      "Supports the association's documentation, communication, meetings, and administrative responsibilities.",
+    role: 'Former President',
+    name: 'Abdulfettah Bushura',
+    image: '/image/leadership/Abdulfettah.jpg',
+    description: 'Former president.',
     featured: false,
   },
   {
-    role: 'Secretary General',
-    name: 'Abduselam Nejib',
-    description:
-      "Contributes to the association's secretarial and organizational responsibilities.",
+    role: 'Former President',
+    name: 'Amir Jihad',
+    image: '/image/leadership/Amir.jpg',
+    description: 'Former President.',
     featured: false,
   },
 ]
 
-const DEPARTMENTS = [
+type DepartmentMember = {
+  role: string
+  name: string
+  image?: string
+}
+
+type Department = {
+  name: string
+  members: DepartmentMember[]
+}
+
+const DEPARTMENTS: Department[] = [
   {
     name: 'Advocacy',
-    director: 'Kalkidan Melaku',
-    viceDirector: 'Abdiyom Bekele',
+    members: [
+      {
+        role: 'Director',
+        name: 'Kalkidan Melaku',
+        image: '/image/leadership/Kalkidan.jpg',
+      },
+      {
+        role: 'Vice Director',
+        name: 'Abdiyom Bekele',
+        image: '/image/leadership/Abdiyom.jpg',
+      },
+    ],
   },
   {
     name: 'Academic Affairs & Peer Mentorship',
-    director: 'Mikiyas Nigussie',
-    viceDirector: 'Asrat',
+    members: [
+      {
+        role: 'Director',
+        name: 'Mikiyas Nigussie',
+        image: '/image/leadership/Mikiyas.jpg',
+      },
+      {
+        role: 'Vice Director',
+        name: 'Asrat',
+        image: '/image/leadership/Asrat.jpg',
+      },
+    ],
   },
   {
     name: 'Event Planning',
-    director: 'Mintesnot Habtu',
-    viceDirector: 'Beamlak & Neima Umer',
+    members: [
+      {
+        role: 'Director',
+        name: 'Mintesnot Habtu',
+        image: '/image/leadership/Mintesnot.jpg',
+      },
+      {
+        role: 'Vice Director',
+        name: 'Beamlak',
+        image: '/image/leadership/Bamlak.jpg',
+      },
+      {
+        role: 'Vice Director',
+        name: 'Neima Umer',
+        image: '/image/leadership/Neima.jpg',
+      },
+    ],
   },
   {
     name: 'Alumni Network',
-    director: 'Ababo Kebede',
-    viceDirector: 'Meshan Teshome',
+    members: [
+      {
+        role: 'Director',
+        name: 'Ababo Kebede',
+        image: '/image/leadership/Ababo.jpg',
+      },
+      {
+        role: 'Vice Director',
+        name: 'Meshan Teshome',
+        image: '/image/leadership/Meshan.jpg',
+      },
+    ],
   },
   {
     name: 'Career Development',
-    director: 'Mihret Melese',
-    viceDirector: 'Hilaria Anteneh',
+    members: [
+      {
+        role: 'Director',
+        name: 'Mihret Melese',
+        image: '/image/leadership/Mehret.jpg',
+      },
+      {
+        role: 'Vice Director',
+        name: 'Hilaria Anteneh',
+        image: '/image/leadership/Hilaria.jpg',
+      },
+    ],
   },
   {
     name: 'Social Inclusion',
-    director: 'Habtamu',
-    viceDirector: 'Bahiru Lema',
+    members: [
+      {
+        role: 'Director',
+        name: 'Habtamu',
+        image: '/image/leadership/Habtamu.jpg',
+      },
+      {
+        role: 'Vice Director',
+        name: 'Bahiru Lema',
+        image: '/image/leadership/Bahiru.jpg',
+      },
+    ],
   },
   {
     name: 'Finance & Fundraising',
-    director: 'Lidia Esayas',
-    viceDirector: 'Eyob Gudeta',
+    members: [
+      {
+        role: 'Director',
+        name: 'Lidia Esayas',
+        image: '/image/leadership/Lidya.jpg',
+      },
+      {
+        role: 'Vice Director',
+        name: 'Eyob Gudeta',
+      },
+    ],
   },
   {
     name: 'Moot Court & Legal Advocacy',
-    director: 'Tsinat Diro',
-    viceDirector: 'Ruhama Yesuf',
+    members: [
+      {
+        role: 'Director',
+        name: 'Tsinat Diro',
+        image: '/image/leadership/Tsinat.jpg',
+      },
+      {
+        role: 'Vice Director',
+        name: 'Ruhama Yesuf',
+        image: '/image/leadership/Ruhama.jpg',
+      },
+    ],
   },
 ]
+
+function initials(name: string) {
+  return name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part.charAt(0).toUpperCase())
+    .join('')
+}
 
 export default function AboutUs() {
   return (
@@ -185,13 +289,93 @@ export default function AboutUs() {
         </div>
       </section>
 
+      {/* Leadership — placed right after the association description */}
+      <section className='border-b border-white/10 bg-night-900 py-24 lg:py-32'>
+        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+          <div className='flex flex-col justify-between gap-6 md:flex-row md:items-end'>
+            <div className='max-w-3xl'>
+              <p className='text-xs font-semibold uppercase tracking-[0.2em] text-gold-300'>
+                01 · Leadership
+              </p>
+
+              <h2 className='mt-5 font-display text-4xl font-bold leading-tight sm:text-5xl'>
+                Meet the{' '}
+                <span className='text-gold-300'>JULSA leadership.</span>
+              </h2>
+
+              <p className='mt-5 text-base leading-relaxed text-cream-100/55'>
+                Student leaders who help coordinate the association and turn its
+                objectives into meaningful programs and activities.
+              </p>
+            </div>
+
+            <Link
+              href='/#contact'
+              className='group inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-gold-300 transition-colors hover:text-gold-200'
+            >
+              Connect with JULSA
+              <ArrowIcon className='h-4 w-4 transition-transform group-hover:translate-x-1' />
+            </Link>
+          </div>
+
+          <div className='mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
+            {LEADERSHIP.map((leader) => (
+              <article
+                key={`${leader.role}-${leader.name}`}
+                className={`group overflow-hidden rounded-2xl border ${
+                  leader.featured
+                    ? 'border-gold-400/35 bg-gradient-to-b from-gold-400/[0.08] to-white/[0.02]'
+                    : 'border-white/10 bg-white/[0.025]'
+                }`}
+              >
+                {/* Portrait */}
+                <div className='relative aspect-[3/4] overflow-hidden bg-night-900'>
+                  <Image
+                    src={leader.image}
+                    alt={`${leader.name} - ${leader.role}`}
+                    fill
+                    sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw'
+                    className='object-cover object-top transition-transform duration-500 group-hover:scale-105'
+                  />
+
+                  <div className='absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/10 to-transparent' />
+
+                  <span className='absolute bottom-4 left-4 rounded-full border border-gold-400/20 bg-night-950/80 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-gold-300 backdrop-blur'>
+                    {leader.role}
+                  </span>
+                </div>
+
+                <div className='p-6'>
+                  <h3 className='font-display text-xl font-bold'>
+                    {leader.name}
+                  </h3>
+
+                  <p className='mt-3 text-sm leading-relaxed text-cream-100/50'>
+                    {leader.description}
+                  </p>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          {/* Leadership note */}
+          <div className='mt-8 rounded-2xl border border-white/10 bg-white/[0.02] p-6'>
+            <p className='text-sm leading-relaxed text-cream-100/45'>
+              JULSA&rsquo;s leadership structure also includes representatives
+              and student leadership roles established under the
+              association&rsquo;s governing framework.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* History */}
       <section className='relative overflow-hidden py-24 lg:py-32'>
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
           <div className='grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24'>
             <div>
               <p className='text-xs font-semibold uppercase tracking-[0.2em] text-gold-300'>
-                01 · Our History
+                02 · Our History
               </p>
 
               <h2 className='mt-5 font-display text-4xl font-bold leading-tight sm:text-5xl'>
@@ -240,7 +424,7 @@ export default function AboutUs() {
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
           <div className='max-w-3xl'>
             <p className='text-xs font-semibold uppercase tracking-[0.2em] text-gold-300'>
-              02 · Objectives
+              03 · Objectives
             </p>
 
             <h2 className='mt-5 font-display text-4xl font-bold leading-tight sm:text-5xl'>
@@ -278,7 +462,7 @@ export default function AboutUs() {
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
           <div className='text-center'>
             <p className='text-xs font-semibold uppercase tracking-[0.2em] text-gold-300'>
-              03 · Our Values
+              04 · Our Values
             </p>
 
             <h2 className='mt-5 font-display text-4xl font-bold sm:text-5xl'>
@@ -340,7 +524,7 @@ export default function AboutUs() {
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
           <div className='max-w-3xl'>
             <p className='text-xs font-semibold uppercase tracking-[0.2em] text-gold-300'>
-              04 · Organization
+              05 · Organization
             </p>
 
             <h2 className='mt-5 font-display text-4xl font-bold leading-tight sm:text-5xl'>
@@ -419,123 +603,59 @@ export default function AboutUs() {
               </span>
             </div>
 
-            <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
-              {DEPARTMENTS.map((department) => (
+            <div className='grid gap-6 lg:grid-cols-2'>
+              {DEPARTMENTS.map((department, index) => (
                 <article
                   key={department.name}
-                  className='rounded-2xl border border-white/10 bg-white/[0.025] p-5 transition-all hover:border-gold-400/30'
+                  className='group rounded-3xl border border-white/10 bg-white/[0.025] p-7 transition-all duration-300 hover:border-gold-400/40 hover:bg-white/[0.04]'
                 >
-                  <h4 className='font-display text-lg font-bold text-cream-50'>
-                    {department.name}
-                  </h4>
+                  <div className='flex items-center gap-4'>
+                    <span className='flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gold-400/30 bg-gold-400/10 font-display text-sm font-bold text-gold-300'>
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
 
-                  <div className='mt-5 space-y-3 text-xs'>
-                    <div>
-                      <span className='block uppercase tracking-wider text-cream-100/30'>
-                        Director
-                      </span>
+                    <h4 className='font-display text-xl font-bold text-cream-50'>
+                      {department.name}
+                    </h4>
+                  </div>
 
-                      <span className='mt-1 block text-gold-200'>
-                        {department.director}
-                      </span>
-                    </div>
+                  <div className='mt-6 space-y-4'>
+                    {department.members.map((member) => (
+                      <div
+                        key={`${member.role}-${member.name}`}
+                        className='flex items-center gap-5 rounded-2xl border border-white/5 bg-white/[0.02] p-4'
+                      >
+                        <div className='relative h-32 w-24 shrink-0 overflow-hidden rounded-xl border border-gold-400/25 bg-night-900'>
+                          {member.image ? (
+                            <Image
+                              src={member.image}
+                              alt={`${member.name} - ${member.role}`}
+                              fill
+                              sizes='96px'
+                              className='object-cover object-top transition-transform duration-500 group-hover:scale-105'
+                            />
+                          ) : (
+                            <span className='flex h-full w-full items-center justify-center font-display text-xl font-bold text-gold-300/70'>
+                              {initials(member.name)}
+                            </span>
+                          )}
+                        </div>
 
-                    <div>
-                      <span className='block uppercase tracking-wider text-cream-100/30'>
-                        Vice Director
-                      </span>
+                        <div className='min-w-0'>
+                          <p className='text-[10px] font-semibold uppercase tracking-[0.16em] text-gold-300/70'>
+                            {member.role}
+                          </p>
 
-                      <span className='mt-1 block text-cream-100/60'>
-                        {department.viceDirector}
-                      </span>
-                    </div>
+                          <p className='mt-1.5 font-display text-base font-bold leading-snug text-cream-50'>
+                            {member.name}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </article>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Leadership */}
-      <section className='py-24 lg:py-32'>
-        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-          <div className='flex flex-col justify-between gap-6 md:flex-row md:items-end'>
-            <div className='max-w-3xl'>
-              <p className='text-xs font-semibold uppercase tracking-[0.2em] text-gold-300'>
-                05 · Leadership
-              </p>
-
-              <h2 className='mt-5 font-display text-4xl font-bold leading-tight sm:text-5xl'>
-                Meet the{' '}
-                <span className='text-gold-300'>JULSA leadership.</span>
-              </h2>
-
-              <p className='mt-5 text-base leading-relaxed text-cream-100/55'>
-                Student leaders who help coordinate the association and turn its
-                objectives into meaningful programs and activities.
-              </p>
-            </div>
-
-            <a
-              href='#contact'
-              className='group inline-flex shrink-0 items-center gap-2 text-sm font-semibold text-gold-300 transition-colors hover:text-gold-200'
-            >
-              Connect with JULSA
-              <ArrowIcon className='h-4 w-4 transition-transform group-hover:translate-x-1' />
-            </a>
-          </div>
-
-          <div className='mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4'>
-            {LEADERSHIP.map((leader) => (
-              <article
-                key={`${leader.role}-${leader.name}`}
-                className={`group overflow-hidden rounded-2xl border ${
-                  leader.featured
-                    ? 'border-gold-400/35 bg-gradient-to-b from-gold-400/[0.08] to-white/[0.02]'
-                    : 'border-white/10 bg-white/[0.025]'
-                }`}
-              >
-                {/* Profile placeholder */}
-                <div className='relative aspect-[4/3] overflow-hidden bg-night-900'>
-                  <Image
-                    src={leader.image ?? '/leadership/placeholder.jpg'}
-                    alt={`${leader.name} - ${leader.role}`}
-                    fill
-                    className='object-cover transition-transform duration-500 group-hover:scale-105'
-                    sizes='(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw'
-                  />
-
-                  <div className='absolute inset-0 bg-linear-to-t from-night-950 via-night-950/10 to-transparent' />
-
-                  <span className='absolute bottom-4 left-4 rounded-full border border-gold-400/20 bg-night-950/80 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.16em] text-gold-300 backdrop-blur'>
-                    {leader.role}
-                  </span>
-                </div>
-                <div className='p-6'>
-                  <p className='text-xs font-semibold uppercase tracking-[0.16em] text-gold-300/70'>
-                    {leader.role}
-                  </p>
-
-                  <h3 className='mt-2 font-display text-xl font-bold'>
-                    {leader.name}
-                  </h3>
-
-                  <p className='mt-3 text-sm leading-relaxed text-cream-100/50'>
-                    {leader.description}
-                  </p>
-                </div>
-              </article>
-            ))}
-          </div>
-
-          {/* Leadership note */}
-          <div className='mt-8 rounded-2xl border border-white/10 bg-white/[0.02] p-6'>
-            <p className='text-sm leading-relaxed text-cream-100/45'>
-              JULSA&rsquo;s leadership structure also includes representatives
-              and student leadership roles established under the
-              association&rsquo;s governing framework.
-            </p>
           </div>
         </div>
       </section>
@@ -564,13 +684,13 @@ export default function AboutUs() {
                 service.
               </p>
 
-              <a
-                href='#membership'
+              <Link
+                href='/#join'
                 className='group mt-8 inline-flex items-center gap-2 rounded-full bg-gold-400 px-6 py-3 text-sm font-semibold text-night-950 transition-colors hover:bg-gold-300'
               >
                 Become a Member
                 <ArrowIcon className='h-4 w-4 transition-transform group-hover:translate-x-1' />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
