@@ -4,7 +4,6 @@ import Events from '@/components/events'
 import MootCourt from '@/components/mootcourt'
 import Members from '@/components/members'
 import Contact from '@/components/contact'
-import Footer from '@/components/footer'
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
       <MootCourt />
       <Members />
       <Contact />
-      <Footer />
+     
     </main>
   )
 }

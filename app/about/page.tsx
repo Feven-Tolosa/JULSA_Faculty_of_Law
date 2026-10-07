@@ -245,6 +245,21 @@ export default function AboutUs() {
     <main className='bg-night-950 text-cream-50'>
       {/* Hero */}
       <section className='relative isolate overflow-hidden border-b border-white/10'>
+        {/* Jimma University background */}
+        <Image
+          src='/jimmauniversity.jpg'
+          alt=''
+          fill
+          preload
+          sizes='100vw'
+          className='-z-10 object-cover object-center'
+        />
+
+        <div
+          aria-hidden='true'
+          className='absolute inset-0 -z-10 bg-gradient-to-r from-night-950/95 via-night-950/85 to-night-950/65'
+        />
+
         <div
           aria-hidden='true'
           className='absolute right-0 top-0 -z-10 h-[500px] w-[500px] rounded-full bg-gold-500/[0.08] blur-[140px]'
@@ -416,6 +431,79 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
+
+          {/* Departments */}
+          <div className='mt-16 border-t border-white/10 pt-14'>
+            <div className='mb-8 flex items-end justify-between gap-4'>
+              <div>
+                <p className='text-xs font-semibold uppercase tracking-[0.18em] text-cream-100/35'>
+                  Departments
+                </p>
+
+                <h3 className='mt-2 font-display text-2xl font-bold'>
+                  Executive Departments
+                </h3>
+              </div>
+
+              <span className='hidden text-xs text-cream-100/30 sm:block'>
+                JULSA Leadership Structure
+              </span>
+            </div>
+
+            <div className='grid gap-6 lg:grid-cols-2'>
+              {DEPARTMENTS.map((department, index) => (
+                <article
+                  key={department.name}
+                  className='group rounded-3xl border border-white/10 bg-white/[0.025] p-7 transition-all duration-300 hover:border-gold-400/40 hover:bg-white/[0.04]'
+                >
+                  <div className='flex items-center gap-4'>
+                    <span className='flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gold-400/30 bg-gold-400/10 font-display text-sm font-bold text-gold-300'>
+                      {String(index + 1).padStart(2, '0')}
+                    </span>
+
+                    <h4 className='font-display text-xl font-bold text-cream-50'>
+                      {department.name}
+                    </h4>
+                  </div>
+
+                  <div className='mt-6 space-y-5'>
+                    {department.members.map((member) => (
+                      <div
+                        key={`${member.role}-${member.name}`}
+                        className='flex flex-col items-center gap-4 rounded-2xl border border-white/5 bg-white/[0.02] p-5 sm:flex-row sm:items-center sm:gap-5 sm:p-4'
+                      >
+                        <div className='relative h-48 w-36 shrink-0 overflow-hidden rounded-xl border-2 border-gold-400/40 bg-night-900'>
+                          {member.image ? (
+                            <Image
+                              src={member.image}
+                              alt={`${member.name} - ${member.role}`}
+                              fill
+                              sizes='144px'
+                              className='object-cover object-top transition-transform duration-500 group-hover:scale-105'
+                            />
+                          ) : (
+                            <span className='flex h-full w-full items-center justify-center font-display text-4xl font-bold text-gold-300/70'>
+                              {initials(member.name)}
+                            </span>
+                          )}
+                        </div>
+
+                        <div className='min-w-0 text-center sm:text-left'>
+                          <p className='text-[10px] font-semibold uppercase tracking-[0.16em] text-gold-300/70'>
+                            {member.role}
+                          </p>
+
+                          <p className='mt-1.5 font-display text-lg font-bold leading-snug text-cream-50'>
+                            {member.name}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -585,78 +673,6 @@ export default function AboutUs() {
             </div>
           </div>
 
-          {/* Departments */}
-          <div className='mt-16'>
-            <div className='mb-6 flex items-end justify-between gap-4'>
-              <div>
-                <p className='text-xs font-semibold uppercase tracking-[0.18em] text-cream-100/35'>
-                  Departments
-                </p>
-
-                <h3 className='mt-2 font-display text-2xl font-bold'>
-                  Executive Departments
-                </h3>
-              </div>
-
-              <span className='hidden text-xs text-cream-100/30 sm:block'>
-                JULSA Leadership Structure
-              </span>
-            </div>
-
-            <div className='grid gap-6 lg:grid-cols-2'>
-              {DEPARTMENTS.map((department, index) => (
-                <article
-                  key={department.name}
-                  className='group rounded-3xl border border-white/10 bg-white/[0.025] p-7 transition-all duration-300 hover:border-gold-400/40 hover:bg-white/[0.04]'
-                >
-                  <div className='flex items-center gap-4'>
-                    <span className='flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-gold-400/30 bg-gold-400/10 font-display text-sm font-bold text-gold-300'>
-                      {String(index + 1).padStart(2, '0')}
-                    </span>
-
-                    <h4 className='font-display text-xl font-bold text-cream-50'>
-                      {department.name}
-                    </h4>
-                  </div>
-
-                  <div className='mt-6 space-y-4'>
-                    {department.members.map((member) => (
-                      <div
-                        key={`${member.role}-${member.name}`}
-                        className='flex items-center gap-5 rounded-2xl border border-white/5 bg-white/[0.02] p-4'
-                      >
-                        <div className='relative h-32 w-24 shrink-0 overflow-hidden rounded-xl border border-gold-400/25 bg-night-900'>
-                          {member.image ? (
-                            <Image
-                              src={member.image}
-                              alt={`${member.name} - ${member.role}`}
-                              fill
-                              sizes='96px'
-                              className='object-cover object-top transition-transform duration-500 group-hover:scale-105'
-                            />
-                          ) : (
-                            <span className='flex h-full w-full items-center justify-center font-display text-xl font-bold text-gold-300/70'>
-                              {initials(member.name)}
-                            </span>
-                          )}
-                        </div>
-
-                        <div className='min-w-0'>
-                          <p className='text-[10px] font-semibold uppercase tracking-[0.16em] text-gold-300/70'>
-                            {member.role}
-                          </p>
-
-                          <p className='mt-1.5 font-display text-base font-bold leading-snug text-cream-50'>
-                            {member.name}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
