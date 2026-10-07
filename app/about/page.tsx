@@ -64,15 +64,15 @@ const ADDITIONAL_VALUES = [
 const LEADERSHIP = [
   {
     role: 'President',
-    name: 'Segni Niguse Gudeta',
-    image: '/leadership/president.jpg',
-    description:
-      'Provides leadership to the association and oversees its activities and responsibilities.',
+    name: 'Natan Tadese',
+    image: '/leadership/presidentNatan.jpg',
+    description: 'Founder and former president of JULSA',
     featured: true,
   },
   {
     role: 'Vice President',
     name: 'Amanu’el Abera',
+    image: '/leadership/vicePresidentAmanuel.jpg',
     description:
       'Supports the President and contributes to the effective coordination of JULSA activities.',
     featured: false,
