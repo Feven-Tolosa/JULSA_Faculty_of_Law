@@ -20,25 +20,25 @@ export default function Hero() {
   return (
     <section className='relative isolate min-h-screen overflow-hidden bg-night-950 text-cream-50'>
       {/* Jimma University background */}
-      <section  className="relative isolate overflow-hidden border-b border-white/10">
-      <Image
-        src='/jimmauniversity.jpg'
-        alt=''
-        fill
-        preload
-        sizes='100vw'
-        className='-z-10 object-cover object-center'
-      />
-       <div
-                aria-hidden='true'
-                className='absolute inset-0 -z-10 bg-gradient-to-r from-night-950/95 via-night-950/85 to-night-950/65'
-              />
-      
-              <div
-                aria-hidden='true'
-                className='absolute right-0 top-0 -z-10 h-[500px] w-[500px] rounded-full bg-gold-500/[0.08] blur-[140px]'
-              />
-              </section>
+      <section className='relative isolate overflow-hidden border-b border-white/10'>
+        <Image
+          src='/jimmauniversity.jpg'
+          alt=''
+          fill
+          preload
+          sizes='100vw'
+          className='-z-10 object-cover object-center'
+        />
+        <div
+          aria-hidden='true'
+          className='absolute inset-0 -z-10 bg-gradient-to-r from-night-950/95 via-night-950/85 to-night-950/65'
+        />
+
+        <div
+          aria-hidden='true'
+          className='absolute right-0 top-0 -z-10 h-[500px] w-[500px] rounded-full bg-gold-500/[0.08] blur-[140px]'
+        />
+      </section>
       {/* Backdrop */}
       <div aria-hidden='true' className='absolute inset-0 -z-10'>
         <div className='absolute inset-0 bg-[radial-gradient(1100px_600px_at_75%_-10%,rgba(212,175,55,0.14),transparent_60%),radial-gradient(800px_500px_at_0%_110%,rgba(29,78,216,0.12),transparent_55%)]' />
@@ -172,46 +172,13 @@ export default function Hero() {
           />
 
           {/* Main emblem plaque */}
-          <div className='relative rounded-3xl border border-gold-400/25 bg-gradient-to-b from-white/[0.07] to-white/[0.02] p-8 shadow-2xl backdrop-blur-xl animate-fade-up'>
-            <div className='absolute inset-x-10 top-0 h-px bg-gradient-to-r from-transparent via-gold-400/60 to-transparent' />
-
-            <div className='flex flex-col items-center text-center'>
-              {/* Emblem */}
-              <div className='flex h-24 w-24 items-center justify-center rounded-full border-2 border-gold-400/40 bg-night-900 text-gold-300 shadow-[0_0_50px_-10px_rgba(212,175,55,0.6)]'>
-                <ScalesIcon className='h-12 w-12' />
-              </div>
-
-              <h3 className='mt-6 font-display text-2xl font-bold tracking-wide text-cream-50'>
-                JULSA
-              </h3>
-
-              <p className='mt-2 text-sm uppercase tracking-[0.25em] text-gold-300/80'>
-                Learn · Advocate · Lead · Serve
-              </p>
-
-              <p className='mt-6 max-w-sm text-sm leading-relaxed text-cream-100/60'>
-                A student community creating opportunities for learning,
-                leadership, advocacy, professional development, and meaningful
-                engagement beyond the classroom.
-              </p>
-
-              {/* Focus areas */}
-              <div className='mt-8 grid w-full grid-cols-3 gap-3'>
-                {HIGHLIGHTS.map((item) => (
-                  <div
-                    key={item.label}
-                    className='flex flex-col items-center gap-2 rounded-xl border border-white/10 bg-night-900/60 px-3 py-4 transition-colors hover:border-gold-400/40'
-                  >
-                    <item.icon className='h-5 w-5 text-gold-300' />
-
-                    <span className='text-[11px] font-medium uppercase tracking-wider text-cream-100/60'>
-                      {item.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
+          <Image
+            src='/logo.jpg'
+            alt='JULSA Logo'
+            width={400}
+            height={400}
+            className='mx-auto w-72 rounded-3xl object-cover sm:w-80 lg:w-[28rem]'
+          />
 
           {/* Floating card — top right */}
           <div className='absolute -right-4 -top-8 w-52 rounded-2xl border border-white/10 bg-night-800/90 p-4 shadow-xl backdrop-blur-md animate-float lg:-right-10 lg:-top-10'>
@@ -266,4 +233,6 @@ export default function Hero() {
           <span className='h-2 w-1 animate-bounce rounded-full bg-current' />
         </span>
       </a>
-    </section>)}
+    </section>
+  )
+}

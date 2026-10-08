@@ -12,7 +12,6 @@ import {
   Handshake,
   Heart,
   Mail,
-  Menu,
   Network,
   Phone,
   Scale,
@@ -21,7 +20,6 @@ import {
   Sparkles,
   Trophy,
   Users,
-  X,
 } from 'lucide-react'
 
 interface Benefit {
@@ -123,7 +121,7 @@ export default function MembershipPage() {
         <div className='relative mx-auto max-w-7xl px-6 pb-20 pt-28 lg:px-8'>
           <div className='grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]'>
             <div>
-              <div className='mb-6 inline-flex items-center gap-2 rounded-full border border-[#d4af37]/25 bg-[#d4af37]/10 px-4 py-2 text-sm text-[#e8c968]'>
+              <div className='mb-6 inline-flex items-center gap-2 rounded-full border border-gold-400/25 bg-gold-400/10 px-4 py-2 text-sm text-[#e8c968]'>
                 <Users size={16} />
                 JULSA Membership
               </div>

@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { NAV_LINKS } from './links'
 import { ScalesIcon } from './icons'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -63,9 +64,13 @@ export default function Navbar() {
           href='/'
           className='group flex min-w-0 shrink-0 items-center gap-2.5 sm:gap-3'
         >
-          <span className='flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gold-400/40 bg-gold-400/10 text-gold-300 transition-colors group-hover:bg-gold-400/20 sm:h-11 sm:w-11'>
-            <ScalesIcon className='h-5 w-5 sm:h-6 sm:w-6' />
-          </span>
+          <Image
+            src='/logo.jpg'
+            alt='JULSA Logo'
+            width={40}
+            height={40}
+            className='h-10 w-10 rounded-full object-cover'
+          />
 
           <span className='flex min-w-0 flex-col leading-tight'>
             <span className='truncate font-display text-base font-bold tracking-wide text-cream-50 sm:text-lg'>
