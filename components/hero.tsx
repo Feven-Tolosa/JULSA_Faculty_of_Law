@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ScalesIcon, GavelIcon, ColumnsIcon, ArrowIcon } from './icons'
 
 const HIGHLIGHTS = [
@@ -18,6 +19,26 @@ const HIGHLIGHTS = [
 export default function Hero() {
   return (
     <section className='relative isolate min-h-screen overflow-hidden bg-night-950 text-cream-50'>
+      {/* Jimma University background */}
+      <section  className="relative isolate overflow-hidden border-b border-white/10">
+      <Image
+        src='/jimmauniversity.jpg'
+        alt=''
+        fill
+        preload
+        sizes='100vw'
+        className='-z-10 object-cover object-center'
+      />
+       <div
+                aria-hidden='true'
+                className='absolute inset-0 -z-10 bg-gradient-to-r from-night-950/95 via-night-950/85 to-night-950/65'
+              />
+      
+              <div
+                aria-hidden='true'
+                className='absolute right-0 top-0 -z-10 h-[500px] w-[500px] rounded-full bg-gold-500/[0.08] blur-[140px]'
+              />
+              </section>
       {/* Backdrop */}
       <div aria-hidden='true' className='absolute inset-0 -z-10'>
         <div className='absolute inset-0 bg-[radial-gradient(1100px_600px_at_75%_-10%,rgba(212,175,55,0.14),transparent_60%),radial-gradient(800px_500px_at_0%_110%,rgba(29,78,216,0.12),transparent_55%)]' />
@@ -245,6 +266,4 @@ export default function Hero() {
           <span className='h-2 w-1 animate-bounce rounded-full bg-current' />
         </span>
       </a>
-    </section>
-  )
-}
+    </section>)}
