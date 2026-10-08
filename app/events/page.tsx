@@ -194,54 +194,6 @@ export default function Events() {
   return (
     <main className='min-h-screen bg-[#07111f] text-white'>
       {/* =========================================================
-          HERO
-      ========================================================= */}
-      <section className='relative overflow-hidden border-b border-white/10'>
-        <div className='absolute inset-0'>
-          <div className='absolute left-[-10%] top-[-30%] h-[500px] w-[500px] rounded-full bg-[#d4af37]/10 blur-[120px]' />
-          <div className='absolute bottom-[-20%] right-[-10%] h-[450px] w-[450px] rounded-full bg-[#10b5cb]/10 blur-[120px]' />
-        </div>
-
-        <div className='relative mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32'>
-          <div className='max-w-4xl'>
-            <div className='mb-7 inline-flex items-center gap-2 rounded-full border border-[#d4af37]/30 bg-[#d4af37]/10 px-4 py-2 text-sm font-medium text-[#e6c65c]'>
-              <Calendar className='h-4 w-4' />
-              JULSA Events & Activities
-            </div>
-
-            <h1 className='font-serif text-5xl font-semibold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl'>
-              Learn.
-              <span className='block text-[#d4af37]'>Compete.</span>
-              <span className='block'>Connect.</span>
-            </h1>
-
-            <p className='mt-7 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl'>
-              Discover the academic, professional, advocacy, and community
-              activities organized to help law students learn, grow, lead, and
-              serve.
-            </p>
-
-            <div className='mt-9 flex flex-wrap gap-4'>
-              <a
-                href='#upcoming-events'
-                className='group inline-flex items-center gap-2 rounded-full bg-[#d4af37] px-6 py-3.5 font-semibold text-[#07111f] transition hover:bg-[#e6c65c]'
-              >
-                Explore Events
-                <ArrowRight className='h-4 w-4 transition-transform group-hover:translate-x-1' />
-              </a>
-
-              <a
-                href='#event-types'
-                className='inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3.5 font-semibold text-white transition hover:border-[#d4af37]/40 hover:bg-white/10'
-              >
-                Event Types
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================
           EVENT TYPES
       ========================================================= */}
       <section
