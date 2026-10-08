@@ -184,7 +184,7 @@ export default function NewsPage() {
 
   return (
     <main className='min-h-screen bg-[#07111f] text-white'>
-      {/* Page heading — intentionally no hero */}
+      {/* Page heading */}
       <section className='border-b border-white/10 bg-[#091625]'>
         <div className='mx-auto max-w-7xl px-6 pb-10 pt-28 lg:px-8'>
           <div className='flex flex-col justify-between gap-7 lg:flex-row lg:items-end'>
