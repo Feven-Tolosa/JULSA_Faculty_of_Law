@@ -1,5 +1,6 @@
 import { ScalesIcon } from './icons'
 import { NAV_LINKS } from './links'
+import Reveal from './reveal'
 
 const PROGRAM_LINKS = [
   { label: 'Moot Court', href: '#moot-court' },
@@ -47,7 +48,7 @@ export default function Footer() {
       <div className='mx-auto w-full max-w-7xl px-6 pb-10 pt-20 lg:px-8'>
         <div className='grid gap-12 lg:grid-cols-[1.3fr_0.8fr_0.8fr_1.1fr]'>
           {/* Brand */}
-          <div>
+          <Reveal direction='left'>
             <a href='#' className='group flex items-center gap-3'>
               <span className='flex h-11 w-11 items-center justify-center rounded-xl border border-gold-400/40 bg-gold-400/10 text-gold-300 transition-colors group-hover:bg-gold-400/20'>
                 <ScalesIcon className='h-6 w-6' />
@@ -87,10 +88,10 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-          </div>
+          </Reveal>
 
           {/* Explore */}
-          <div>
+          <Reveal delay={0.1}>
             <h4 className='text-xs font-semibold uppercase tracking-[0.22em] text-gold-300'>
               Explore
             </h4>
@@ -106,10 +107,10 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Reveal>
 
           {/* Programs */}
-          <div>
+          <Reveal delay={0.16}>
             <h4 className='text-xs font-semibold uppercase tracking-[0.22em] text-gold-300'>
               Programs
             </h4>
@@ -125,10 +126,10 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Reveal>
 
           {/* Contact */}
-          <div>
+          <Reveal delay={0.22}>
             <h4 className='text-xs font-semibold uppercase tracking-[0.22em] text-gold-300'>
               Contact
             </h4>
@@ -189,11 +190,14 @@ export default function Footer() {
                 <span>{CONTACT.phone}</span>
               </li>
             </ul>
-          </div>
+          </Reveal>
         </div>
 
         {/* Bottom bar */}
-        <div className='mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row'>
+        <Reveal
+          delay={0.3}
+          className='mt-16 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row'
+        >
           <p className='text-xs text-cream-100/45'>
             &copy; {new Date().getFullYear()} Jimma University Law
             Students&rsquo; Association. All rights reserved.
@@ -203,7 +207,7 @@ export default function Footer() {
             <span className='text-gold-300/80'>Justi</span> &middot;{' '}
             <span className='text-gold-300/80'>Veritas</span>
           </p>
-        </div>
+        </Reveal>
       </div>
     </footer>
   )

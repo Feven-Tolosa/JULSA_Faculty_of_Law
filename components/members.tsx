@@ -1,4 +1,5 @@
 import { ArrowIcon, CircleCheckIcon, UsersIcon } from "./icons";
+import Reveal from "./reveal";
 
 const BENEFITS = [
   {
@@ -51,7 +52,7 @@ export default function Members() {
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* Left — pitch + benefits */}
-          <div>
+          <Reveal direction="left">
             <div className="inline-flex items-center gap-2 rounded-full border border-gold-400/30 bg-gold-400/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-300">
               <UsersIcon className="h-3.5 w-3.5" />
               Membership
@@ -69,9 +70,11 @@ export default function Members() {
             </p>
 
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-              {BENEFITS.map((benefit) => (
-                <li
+              {BENEFITS.map((benefit, index) => (
+                <Reveal
                   key={benefit.title}
+                  as="li"
+                  delay={0.12 + index * 0.06}
                   className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all hover:border-gold-400/40 hover:bg-white/[0.05]"
                 >
                   <div className="flex items-center gap-2.5">
@@ -83,13 +86,13 @@ export default function Members() {
                   <p className="mt-2 text-sm leading-relaxed text-cream-100/55">
                     {benefit.text}
                   </p>
-                </li>
+                </Reveal>
               ))}
             </ul>
-          </div>
+          </Reveal>
 
           {/* Right — steps + CTA */}
-          <div>
+          <Reveal direction="right" delay={0.15}>
             <div className="rounded-3xl border border-gold-400/25 bg-gradient-to-br from-white/[0.07] to-white/[0.02] p-8 backdrop-blur-sm lg:p-10">
               <h3 className="font-display text-2xl font-bold text-cream-50">
                 How to Join
@@ -129,7 +132,7 @@ export default function Members() {
                 Law.
               </p>
             </div>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

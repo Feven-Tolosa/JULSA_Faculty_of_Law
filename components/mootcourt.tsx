@@ -1,4 +1,5 @@
 import { ArrowIcon, AwardIcon, GavelIcon } from "./icons";
+import Reveal from "./reveal";
 
 const ACHIEVEMENTS = [
   {
@@ -51,7 +52,7 @@ export default function MootCourt() {
 
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
         <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
-          <div>
+          <Reveal direction="left">
             <div className="inline-flex items-center gap-2 rounded-full border border-gold-400/30 bg-gold-400/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-300">
               <GavelIcon className="h-3.5 w-3.5" />
               Moot Court
@@ -67,18 +68,21 @@ export default function MootCourt() {
               that mirror real Ethiopian courts &mdash; from researching the law
               to delivering the closing argument under pressure.
             </p>
-          </div>
-          <a
-            href="#join"
-            className="group inline-flex shrink-0 items-center gap-2 rounded-full border border-gold-400/50 bg-gold-400/10 px-6 py-3 text-sm font-semibold text-gold-200 transition-all hover:bg-gold-400 hover:text-night-950"
-          >
-            Join a Moot Team
-            <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          </Reveal>
+          <Reveal delay={0.15}>
+            <a
+              href="#join"
+              className="group inline-flex shrink-0 items-center gap-2 rounded-full border border-gold-400/50 bg-gold-400/10 px-6 py-3 text-sm font-semibold text-gold-200 transition-all hover:bg-gold-400 hover:text-night-950"
+            >
+              Join a Moot Team
+              <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </a>
+          </Reveal>
         </div>
 
         {/* Stats strip */}
-        <div
+        <Reveal
+          delay={0.1}
           className="mt-14 grid grid-cols-2 divide-x divide-white/10 rounded-2xl border border-white/10 bg-white/[0.04] py-7 backdrop-blur sm:grid-cols-4"
         >
           {MOOT_STATS.map((stat) => (
@@ -91,13 +95,15 @@ export default function MootCourt() {
               </div>
             </div>
           ))}
-        </div>
+        </Reveal>
 
         {/* Achievements timeline */}
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {ACHIEVEMENTS.map((item) => (
-            <article
+          {ACHIEVEMENTS.map((item, index) => (
+            <Reveal
               key={item.year}
+              as="article"
+              delay={0.1 + index * 0.08}
               className="group relative rounded-2xl border border-white/10 bg-white/[0.03] p-7 transition-all hover:-translate-y-1 hover:border-gold-400/40 hover:bg-white/[0.05]"
             >
               <div className="flex items-center justify-between">
@@ -121,7 +127,7 @@ export default function MootCourt() {
                 aria-hidden="true"
                 className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-400/50 to-transparent opacity-0 transition-opacity group-hover:opacity-100"
               />
-            </article>
+            </Reveal>
           ))}
         </div>
       </div>

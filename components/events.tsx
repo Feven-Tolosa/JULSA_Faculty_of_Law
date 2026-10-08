@@ -1,4 +1,5 @@
 import { ArrowIcon, ColumnsIcon, GavelIcon, ScalesIcon } from './icons'
+import Reveal from './reveal'
 
 const CATEGORY_ICONS = {
   moot: GavelIcon,
@@ -79,7 +80,7 @@ export default function Events() {
       <div className='mx-auto w-full max-w-7xl px-6 lg:px-8'>
         {/* Section heading */}
         <div className='flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end'>
-          <div>
+          <Reveal>
             <div className='inline-flex items-center gap-2 rounded-full border border-gold-400/30 bg-gold-400/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-300'>
               <span className='h-1.5 w-1.5 rounded-full bg-gold-400' />
               JULSA Events
@@ -98,15 +99,17 @@ export default function Events() {
               networking opportunities, and community activities that bring the
               JULSA community together.
             </p>
-          </div>
+          </Reveal>
 
-          <a
-            href='#events'
-            className='group inline-flex shrink-0 items-center gap-2 rounded-full border border-gold-400/50 bg-gold-400/10 px-6 py-3 text-sm font-semibold text-gold-200 transition-all hover:bg-gold-400 hover:text-night-950'
-          >
-            View All Events
-            <ArrowIcon className='h-4 w-4 transition-transform group-hover:translate-x-1' />
-          </a>
+          <Reveal delay={0.15}>
+            <a
+              href='#events'
+              className='group inline-flex shrink-0 items-center gap-2 rounded-full border border-gold-400/50 bg-gold-400/10 px-6 py-3 text-sm font-semibold text-gold-200 transition-all hover:bg-gold-400 hover:text-night-950'
+            >
+              View All Events
+              <ArrowIcon className='h-4 w-4 transition-transform group-hover:translate-x-1' />
+            </a>
+          </Reveal>
         </div>
 
         {/* Events */}
@@ -116,8 +119,9 @@ export default function Events() {
             const Icon = CATEGORY_ICONS[event.icon]
 
             return (
-              <article
+              <Reveal
                 key={event.title}
+                as='article'
                 className='group relative overflow-hidden rounded-3xl border border-gold-400/30 bg-gradient-to-br from-white/[0.07] to-white/[0.02] p-8 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/50 lg:p-10'
               >
                 <div
@@ -175,18 +179,21 @@ export default function Events() {
                     Learn More
                   </a>
                 </div>
-              </article>
+              </Reveal>
             )
           })}
 
           {/* Regular events */}
           <div className='flex flex-col gap-4'>
-            {[head, ...rest].map((event) => {
+            {[head, ...rest].map((event, index) => {
               const Icon = CATEGORY_ICONS[event.icon]
 
               return (
-                <article
+                <Reveal
                   key={event.title}
+                  as='article'
+                  direction='left'
+                  delay={0.08 + index * 0.08}
                   className='group flex items-center gap-5 rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/40 hover:bg-white/[0.05]'
                 >
                   {/* Date */}
@@ -227,14 +234,17 @@ export default function Events() {
                   >
                     <ArrowIcon className='h-4 w-4' />
                   </a>
-                </article>
+                </Reveal>
               )
             })}
           </div>
         </div>
 
         {/* Event categories */}
-        <div className='mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 border-t border-white/10 pt-8'>
+        <Reveal
+          delay={0.25}
+          className='mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 border-t border-white/10 pt-8'
+        >
           <span className='text-xs font-semibold uppercase tracking-[0.18em] text-cream-100/30'>
             Explore
           </span>
@@ -262,7 +272,7 @@ export default function Events() {
           <span className='text-sm text-cream-100/50'>
             Community Engagement
           </span>
-        </div>
+        </Reveal>
       </div>
     </section>
   )

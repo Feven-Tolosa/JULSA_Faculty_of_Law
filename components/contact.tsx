@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ArrowIcon, CircleCheckIcon } from "./icons";
+import Reveal from "./reveal";
 
 const CONTACT_INFO = [
   {
@@ -54,7 +55,7 @@ export default function Contact() {
       />
 
       <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+        <Reveal className="mx-auto max-w-2xl text-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-gold-400/30 bg-gold-400/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-300">
             <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
             Contact
@@ -69,11 +70,11 @@ export default function Contact() {
             Questions, collaborations, or partnership ideas? The JULSA executive
             committee is one message away.
           </p>
-        </div>
+        </Reveal>
 
         <div className="mt-16 grid gap-8 lg:grid-cols-2">
           {/* Info */}
-          <div className="flex flex-col gap-6">
+          <Reveal direction="left" delay={0.1} className="flex flex-col gap-6">
             <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
               <h3 className="font-display text-xl font-bold text-cream-50">
                 Reach Us
@@ -128,13 +129,14 @@ export default function Contact() {
                 ))}
               </ul>
             </div>
-          </div>
+          </Reveal>
 
           {/* Form */}
-          <form
-            onSubmit={handleSubmit}
-            className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-sm lg:p-10"
-          >
+          <Reveal direction="right" delay={0.15}>
+            <form
+              onSubmit={handleSubmit}
+              className="h-full rounded-3xl border border-white/10 bg-white/[0.03] p-8 backdrop-blur-sm lg:p-10"
+            >
             <h3 className="font-display text-xl font-bold text-cream-50">
               Send a Message
             </h3>
@@ -189,14 +191,15 @@ export default function Contact() {
               </div>
             </div>
 
-            <button
-              type="submit"
-              className="group mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-400 px-7 py-4 text-sm font-semibold text-night-950 shadow-[0_0_45px_-8px_rgba(212,175,55,0.7)] transition-all hover:bg-gold-300 hover:shadow-[0_0_55px_-6px_rgba(212,175,55,0.85)]"
-            >
-              Send Message
-              <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </button>
-          </form>
+              <button
+                type="submit"
+                className="group mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gold-400 px-7 py-4 text-sm font-semibold text-night-950 shadow-[0_0_45px_-8px_rgba(212,175,55,0.7)] transition-all hover:bg-gold-300 hover:shadow-[0_0_55px_-6px_rgba(212,175,55,0.85)]"
+              >
+                Send Message
+                <ArrowIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </button>
+            </form>
+          </Reveal>
         </div>
       </div>
     </section>

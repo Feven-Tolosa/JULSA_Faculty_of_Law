@@ -1,4 +1,5 @@
 import { ColumnsIcon, GavelIcon, ScalesIcon, UsersIcon } from './icons'
+import Reveal from './reveal'
 
 const PILLARS = [
   {
@@ -55,7 +56,7 @@ export default function About({
       <div className='mx-auto w-full max-w-7xl px-6 lg:px-8'>
         <div className='grid items-start gap-16 lg:grid-cols-[1fr_1.1fr]'>
           {/* Narrative */}
-          <div>
+          <Reveal direction='left'>
             <div className='inline-flex items-center gap-2 rounded-full border border-gold-400/30 bg-gold-400/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-gold-300'>
               <span className='h-1.5 w-1.5 rounded-full bg-gold-400' />
               About JULSA
@@ -116,11 +117,11 @@ export default function About({
                 </p>
               </div>
             </div>
-          </div>
+          </Reveal>
 
           {/* Pillars */}
           <div>
-            <div className='mb-6'>
+            <Reveal delay={0.1} className='mb-6'>
               <p className='text-xs font-semibold uppercase tracking-[0.2em] text-gold-300/80'>
                 What We Do
               </p>
@@ -130,12 +131,13 @@ export default function About({
                 brings together opportunities that help law students learn,
                 advocate, lead, and serve.
               </p>
-            </div>
+            </Reveal>
 
             <div className='grid gap-5 sm:grid-cols-2'>
-              {PILLARS.map((pillar) => (
-                <div
+              {PILLARS.map((pillar, index) => (
+                <Reveal
                   key={pillar.title}
+                  delay={0.12 + index * 0.08}
                   className='group rounded-2xl border border-white/10 bg-white/[0.03] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-gold-400/40 hover:bg-white/[0.05]'
                 >
                   <span className='flex h-12 w-12 items-center justify-center rounded-xl border border-gold-400/30 bg-gold-400/10 text-gold-300 transition-colors duration-300 group-hover:bg-gold-400 group-hover:text-night-950'>
@@ -149,12 +151,15 @@ export default function About({
                   <p className='mt-3 text-sm leading-relaxed text-cream-100/60'>
                     {pillar.text}
                   </p>
-                </div>
+                </Reveal>
               ))}
             </div>
 
             {/* Secondary principle */}
-            <div className='mt-5 rounded-2xl border border-white/10 bg-white/[0.02] px-6 py-5'>
+            <Reveal
+              delay={0.35}
+              className='mt-5 rounded-2xl border border-white/10 bg-white/[0.02] px-6 py-5'
+            >
               <div className='flex flex-wrap items-center justify-between gap-4'>
                 <span className='text-xs font-semibold uppercase tracking-[0.2em] text-cream-100/40'>
                   Our Way Forward
@@ -170,7 +175,7 @@ export default function About({
                   <span>Serve</span>
                 </div>
               </div>
-            </div>
+            </Reveal>
           </div>
         </div>
       </div>
