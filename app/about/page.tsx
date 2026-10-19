@@ -65,6 +65,27 @@ const ADDITIONAL_VALUES = [
 const LEADERSHIP = [
   {
     role: 'President',
+    name: 'Segni Niguse',
+    image: '/image/leadership/Segni.jpg',
+    description: 'Current President of the JULSA',
+    featured: true,
+  },
+  {
+    role: 'Vice President',
+    name: 'Amanuel Abera',
+    image: '/image/leadership/Amanuel.jpg',
+    description: 'Vice president of JULSA',
+    featured: false,
+  },
+  {
+    role: 'General Secretary',
+    name: 'Saron Berhanu',
+    image: '/image/leadership/Saron.jpg',
+    description: 'General secretary of JULSA',
+    featured: false,
+  },
+  {
+    role: 'President',
     name: 'Natan Tadese',
     image: '/image/leadership/presidentNatan.jpg',
     description: 'Founder and former president of JULSA',
@@ -672,7 +693,6 @@ export default function AboutUs() {
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
