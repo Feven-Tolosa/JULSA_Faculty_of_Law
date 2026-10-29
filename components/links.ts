@@ -1,8 +1,8 @@
 export const NAV_LINKS = [
-  { label: 'About', href: '/about' },
-  { label: 'Leadership', href: '/leadership' },
-  { label: 'Events', href: '/events' },
-  { label: 'Academic Hub', href: '/academic-hub' },
+  // { label: 'About', href: '/about' },
+  // { label: 'Leadership', href: '/leadership' },
+  // { label: 'Events', href: '/events' },
+  // { label: 'Academic Hub', href: '/academic-hub' },
   { label: 'Moot Court', href: '/moot-court' },
   { label: 'Blog', href: '/blog' },
   { label: 'Members', href: '/members' },
