@@ -31,20 +31,30 @@ const CURRENT_EXECUTIVES: Leader[] = [
     role: 'President',
     name: 'Segni Niguse',
     image: '/image/leadership/Segni.jpg',
-    description: 'Current President of the Jimma University Law Students’ Association.',
+    description:
+      'Current President of the Jimma University Law Students’ Association.',
   },
   {
     role: 'Vice President',
     name: 'Amanuel Abera',
     image: '/image/leadership/Amanuel.jpg',
-    description: 'Vice President of JULSA, supporting the association’s programs and initiatives.',
+    description:
+      'Vice President of JULSA, supporting the association’s programs and initiatives.',
   },
   {
     role: 'General Secretary',
     name: 'Saron Berhanu',
     image: '/image/leadership/Saron.jpg',
-    description: 'General Secretary of JULSA, coordinating records and association communication.',
+    description:
+      'General Secretary of JULSA, coordinating records and association communication.',
   },
+  {
+    role: 'General Secretary',
+    name: 'Abdlselam Nejib Hussein',
+    image: '/image/leadership/Abdlselam.jpg',
+    description:
+      'General Secretary of JULSA, coordinating records and association communication.',
+  }
 ]
 
 const FORMER_EXECUTIVES: Leader[] = [
@@ -71,6 +81,46 @@ const FORMER_EXECUTIVES: Leader[] = [
     name: 'Amir Jihad',
     image: '/image/leadership/Amir.jpg',
     description: 'Former president of JULSA.',
+  },
+  {
+    role: 'Former Vice President',
+    name: 'Ofijan Dula',
+    image: '/image/leadership/Ofijan.jpg',
+    description: 'Former vice president of JULSA 2014',
+  },
+
+  {
+    role: 'Former Vice President',
+    name: 'Daniel Tamene',
+    image: '/image/leadership/Daniel.jpg',
+    description: 'Former vice president of JULSA 2015',
+  },
+
+  {
+    role: 'Former Vice President',
+    name: 'Chala Tafese',
+    image: '/image/leadership/Chala.jpg',
+    description: 'Former vice president of JULSA 2016',
+  },
+
+  {
+    role: 'Former Vice President',
+    name: 'Teyib Nebso',
+    image: '/image/leadership/Teyib.jpg',
+    description: 'Former vice president of JULSA 2017',
+  },
+
+  {
+    role: 'Former General Secretary',
+    name: 'Meti Gebisa',
+    image: '/image/leadership/Meti.jpg',
+    description: 'Former General Secretary of JULSA 2014',
+  },
+  {
+    role: 'Former General Secretary',
+    name: 'Mahlet Ashenafi',
+    image: '/image/leadership/Mahlet.jpg',
+    description: 'Former Secretary of JULSA 2015',
   },
 ]
 
@@ -126,17 +176,17 @@ const DEPARTMENTS: Department[] = [
     ],
   },
   {
-    name: 'Alumni Network',
+    name: 'Media Department',
     members: [
       {
-        role: 'Director',
-        name: 'Ababo Kebede',
-        image: '/image/leadership/Ababo.jpg',
+        role: 'Director of Media Department',
+        name: 'Gemechu Haile',
+        image: '/image/leadership/Gemechu.jpg',
       },
       {
-        role: 'Vice Director',
-        name: 'Meshan Teshome',
-        image: '/image/leadership/Meshan.jpg',
+        role: 'Assistant Director of Media Department',
+        name: 'Bemnet Zerihun',
+        image: '/image/leadership/Bemnet.jpg',
       },
     ],
   },
@@ -149,7 +199,7 @@ const DEPARTMENTS: Department[] = [
         image: '/image/leadership/Mehret.jpg',
       },
       {
-        role: 'Vice Director',
+        role: 'Assistant Director',
         name: 'Hilaria Anteneh',
         image: '/image/leadership/Hilaria.jpg',
       },
@@ -181,6 +231,22 @@ const DEPARTMENTS: Department[] = [
       {
         role: 'Vice Director',
         name: 'Eyob Gudeta',
+        image: '/image/leadership/Eyob.jpg',
+      },
+    ],
+  },
+  {
+    name: 'Alumni Relations',
+    members: [
+      {
+        role: 'Director of Almuni Relations Department',
+        name: 'Ababo kebede',
+        image: '/image/leadership/Ababo.jpg',
+      },
+      {
+        role: 'Assistant Director of Alumni Network Department',
+        name: 'Meshan Teshome',
+        image: '/image/leadership/Meshan.jpg',
       },
     ],
   },
@@ -199,6 +265,21 @@ const DEPARTMENTS: Department[] = [
       },
     ],
   },
+  {
+    name: 'Book and Literary',
+    members: [
+      {
+        role: 'Director',
+        name: 'Alsen lemi',
+        image: '/image/leadership/Alsen.jpg',
+      },
+      {
+        role: 'Vice Director',
+        name: 'Awal Kedi',
+        image: '/image/leadership/Awal.jpg',
+      }
+    ]
+  }
 ]
 
 function LinkedInIcon({ className }: { className?: string }) {
