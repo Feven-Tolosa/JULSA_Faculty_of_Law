@@ -54,7 +54,7 @@ const CURRENT_EXECUTIVES: Leader[] = [
     image: '/image/leadership/Abdlselam.jpg',
     description:
       'General Secretary of JULSA, coordinating records and association communication.',
-  }
+  },
 ]
 
 const FORMER_EXECUTIVES: Leader[] = [
@@ -226,12 +226,7 @@ const DEPARTMENTS: Department[] = [
       {
         role: 'Director',
         name: 'Lidia Esayas',
-        image: '/image/leadership/Lidya.jpg',
-      },
-      {
-        role: 'Vice Director',
-        name: 'Eyob Gudeta',
-        image: '/image/leadership/Eyob.jpg',
+        image: '/image/leadership/Lidyaeyasu.jpg',
       },
     ],
   },
@@ -277,9 +272,9 @@ const DEPARTMENTS: Department[] = [
         role: 'Vice Director',
         name: 'Awal Kedi',
         image: '/image/leadership/Awal.jpg',
-      }
-    ]
-  }
+      },
+    ],
+  },
 ]
 
 function LinkedInIcon({ className }: { className?: string }) {
