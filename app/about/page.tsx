@@ -126,8 +126,93 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* History */}
+      {/* Message from the Head of Department */}
       <section className='relative overflow-hidden py-24 lg:py-32'>
+        <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+          <div className='grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20'>
+            <div className='relative mx-auto w-full max-w-md'>
+              <div
+                aria-hidden='true'
+                className='absolute -inset-3 rounded-[2rem] border border-gold-400/20'
+              />
+
+              <div className='relative overflow-hidden rounded-3xl border border-white/10 bg-night-900'>
+                <div className='relative aspect-[4/3]'>
+                  <Image
+                    src='/image/leadership/Firaol.jpg'
+                    alt='Firaol T. Adugna, Head of the Law School Department'
+                    fill
+                    sizes='(max-width: 1024px) 90vw, 420px'
+                    className='object-cover object-center'
+                  />
+
+                  <div className='absolute inset-0 bg-gradient-to-t from-night-950/80 via-transparent to-transparent' />
+                </div>
+
+                <div className='relative p-6'>
+                  <p className='font-display text-xl font-bold text-cream-50'>
+                    Firaol T. Adugna
+                  </p>
+
+                  <p className='mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-gold-300'>
+                    Law School Head Department
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p className='text-xs font-semibold uppercase tracking-[0.2em] text-gold-300'>
+                Message From Head Department
+              </p>
+
+              <h2 className='mt-5 font-display text-4xl font-bold leading-tight sm:text-5xl'>
+                A responsibility{' '}
+                <span className='text-gold-300'>entrusted to you.</span>
+              </h2>
+
+              <div className='mt-7 space-y-5 text-base leading-relaxed text-cream-100/65'>
+                <p>
+                  JULSA is an association created by students, for students. The
+                  students before you initiated and established this
+                  association, and they entrusted it to you.
+                </p>
+
+                <p>
+                  Therefore, you have a responsibility to protect it, sustain
+                  it, and continue building on what they started.
+                </p>
+
+                <p>
+                  We are always with you and ready to support you to the best of
+                  our ability. Personally, I am fully committed to supporting
+                  JULSA.
+                </p>
+              </div>
+
+              <div className='mt-8 flex items-center gap-4 border-t border-white/10 pt-6'>
+                <span
+                  aria-hidden='true'
+                  className='h-px w-10 bg-gradient-to-r from-gold-400/60 to-transparent'
+                />
+
+                <div>
+                  <p className='font-display text-lg font-bold text-gold-200'>
+                    Firaol T. Adugna
+                  </p>
+
+                  <p className='text-sm text-cream-100/45'>
+                    Law School Head Department
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* History */}
+      <section className='relative overflow-hidden border-t border-white/10 py-24 lg:py-32'>
         <div className='mx-auto max-w-7xl px-6 lg:px-8'>
           <div className='grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-24'>
             <div>
