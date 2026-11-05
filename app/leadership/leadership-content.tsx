@@ -65,7 +65,7 @@ const FORMER_EXECUTIVES: Leader[] = [
     description: 'Founder and former president of JULSA.',
   },
   {
-    role: 'Vice President',
+    role: 'Former President',
     name: 'Tolera Dufera',
     image: '/image/leadership/Tolera.jpg',
     description: 'Former president of JULSA.',
@@ -179,12 +179,12 @@ const DEPARTMENTS: Department[] = [
     name: 'Media Department',
     members: [
       {
-        role: 'Director of Media Department',
+        role: 'Director',
         name: 'Gemechu Haile',
         image: '/image/leadership/Gemechu.jpg',
       },
       {
-        role: 'Assistant Director of Media Department',
+        role: 'Director',
         name: 'Bemnet Zerihun',
         image: '/image/leadership/Bemnet.jpg',
       },
@@ -199,7 +199,7 @@ const DEPARTMENTS: Department[] = [
         image: '/image/leadership/Mehret.jpg',
       },
       {
-        role: 'Assistant Director',
+        role: 'Director',
         name: 'Hilaria Anteneh',
         image: '/image/leadership/Hilaria.jpg',
       },
@@ -234,12 +234,12 @@ const DEPARTMENTS: Department[] = [
     name: 'Alumni Relations',
     members: [
       {
-        role: 'Director of Almuni Relations Department',
+        role: 'Director',
         name: 'Ababo kebede',
         image: '/image/leadership/Ababo.jpg',
       },
       {
-        role: 'Assistant Director of Alumni Network Department',
+        role: 'Director',
         name: 'Meshan Teshome',
         image: '/image/leadership/Meshan.jpg',
       },

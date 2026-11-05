@@ -100,10 +100,11 @@ export default function AboutUs() {
             </div>
 
             <h1 className='mt-7 font-display text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl'>
-              Building the Future of{' '}
+              Where We Build {' '}
               <span className='bg-gradient-to-r from-gold-200 via-gold-400 to-gold-300 bg-clip-text text-transparent'>
-                Legal Leadership
-              </span>
+                Tomorrow&rsquo;s
+              </span>{' '}
+              Legal Minds
             </h1>
 
             <p className='mt-7 max-w-2xl text-lg leading-relaxed text-cream-100/65'>
@@ -166,10 +167,6 @@ export default function AboutUs() {
                 Message From Head Department
               </p>
 
-              <h2 className='mt-5 font-display text-4xl font-bold leading-tight sm:text-5xl'>
-                A responsibility{' '}
-                <span className='text-gold-300'>entrusted to you.</span>
-              </h2>
 
               <div className='mt-7 space-y-5 text-base leading-relaxed text-cream-100/65'>
                 <p>
