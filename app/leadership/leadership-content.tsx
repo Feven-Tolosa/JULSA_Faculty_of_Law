@@ -11,6 +11,7 @@ type Leader = {
   name: string
   image?: string
   description: string
+  year?: string
   email?: string
   linkedin?: string
 }
@@ -62,67 +63,79 @@ const FORMER_EXECUTIVES: Leader[] = [
     role: 'Founder & Former President',
     name: 'Natan Tadese',
     image: '/image/leadership/presidentNatan.jpg',
-    description: 'Founder and former president of JULSA.',
-  },
-  {
-    role: 'Former President',
-    name: 'Tolera Dufera',
-    image: '/image/leadership/Tolera.jpg',
-    description: 'Former president of JULSA.',
-  },
-  {
-    role: 'Former President',
-    name: 'Abdulfettah Bushura',
-    image: '/image/leadership/Abdulfettah.jpg',
-    description: 'Former president of JULSA.',
-  },
-  {
-    role: 'Former President',
-    name: 'Amir Jihad',
-    image: '/image/leadership/Amir.jpg',
-    description: 'Former president of JULSA.',
+    description: 'Founder and former president of JULSA 2014.',
+    year: '2014',
   },
   {
     role: 'Former Vice President',
     name: 'Ofijan Dula',
     image: '/image/leadership/Ofijan.jpg',
-    description: 'Former vice president of JULSA 2014',
+    description: 'Former vice president of JULSA 2014.',
+    year: '2014',
   },
-
-  {
-    role: 'Former Vice President',
-    name: 'Daniel Tamene',
-    image: '/image/leadership/Daniel.jpg',
-    description: 'Former vice president of JULSA 2015',
-  },
-
-  {
-    role: 'Former Vice President',
-    name: 'Chala Tafese',
-    image: '/image/leadership/Chala.jpg',
-    description: 'Former vice president of JULSA 2016',
-  },
-
-  {
-    role: 'Former Vice President',
-    name: 'Teyib Nebso',
-    image: '/image/leadership/Teyib.jpg',
-    description: 'Former vice president of JULSA 2017',
-  },
-
   {
     role: 'Former General Secretary',
     name: 'Meti Gebisa',
     image: '/image/leadership/Meti.jpg',
-    description: 'Former General Secretary of JULSA 2014',
+    description: 'Former General Secretary of JULSA 2014.',
+    year: '2014',
+  },
+  {
+    role: 'Former President',
+    name: 'Tolera Dufera',
+    image: '/image/leadership/Tolera.jpg',
+    description: 'Former president of JULSA 2015.',
+    year: '2015',
+  },
+  {
+    role: 'Former Vice President',
+    name: 'Daniel Tamene',
+    image: '/image/leadership/Daniel.jpg',
+    description: 'Former vice president of JULSA 2015.',
+    year: '2015',
   },
   {
     role: 'Former General Secretary',
     name: 'Mahlet Ashenafi',
     image: '/image/leadership/Mahlet.jpg',
-    description: 'Former Secretary of JULSA 2015',
+    description: 'Former Secretary of JULSA 2015.',
+    year: '2015',
+  },
+  {
+    role: 'Former President',
+    name: 'Abdulfettah Bushura',
+    image: '/image/leadership/Abdulfettah.jpg',
+    description: 'Former president of JULSA 2016.',
+    year: '2016',
+  },
+  {
+    role: 'Former Vice President',
+    name: 'Chala Tafese',
+    image: '/image/leadership/Chala.jpg',
+    description: 'Former vice president of JULSA 2016.',
+    year: '2016',
+  },
+  {
+    role: 'Former President',
+    name: 'Amir Jihad',
+    image: '/image/leadership/Amir.jpg',
+    description: 'Former president of JULSA 2017.',
+    year: '2017',
+  },
+  {
+    role: 'Former Vice President',
+    name: 'Teyib Nebso',
+    image: '/image/leadership/Teyib.jpg',
+    description: 'Former vice president of JULSA 2017.',
+    year: '2017',
   },
 ]
+
+const FORMER_YEARS = Array.from(
+  new Set(FORMER_EXECUTIVES.map((leader) => leader.year)),
+)
+  .filter((year): year is string => Boolean(year))
+  .sort()
 
 const DEPARTMENTS: Department[] = [
   {
@@ -613,16 +626,40 @@ export default function LeadershipContent() {
                   </p>
                 </div>
 
-                <div className='mt-12 flex flex-wrap justify-center gap-8'>
-                  {FORMER_EXECUTIVES.map((leader, index) => (
-                    <Reveal
-                      key={`${leader.role}-${leader.name}`}
-                      delay={index * 0.08}
-                      direction='scale'
-                      className='w-full max-w-[300px]'
-                    >
-                      <LeaderCard leader={leader} />
-                    </Reveal>
+                <div className='mt-12 space-y-14'>
+                  {FORMER_YEARS.map((year) => (
+                    <div key={year}>
+                      <div className='flex items-center justify-center gap-4'>
+                        <span
+                          aria-hidden='true'
+                          className='h-px w-8 bg-gradient-to-r from-transparent to-gold-400/40'
+                        />
+
+                        <h3 className='text-center font-display text-2xl font-semibold text-cream-50'>
+                          {year} Executive
+                        </h3>
+
+                        <span
+                          aria-hidden='true'
+                          className='h-px w-8 bg-gradient-to-l from-transparent to-gold-400/40'
+                        />
+                      </div>
+
+                      <div className='mt-8 flex flex-wrap justify-center gap-8'>
+                        {FORMER_EXECUTIVES.filter(
+                          (leader) => leader.year === year,
+                        ).map((leader, index) => (
+                          <Reveal
+                            key={`${leader.role}-${leader.name}`}
+                            delay={index * 0.08}
+                            direction='scale'
+                            className='w-full max-w-[300px]'
+                          >
+                            <LeaderCard leader={leader} />
+                          </Reveal>
+                        ))}
+                      </div>
+                    </div>
                   ))}
                 </div>
 

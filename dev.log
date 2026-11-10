@@ -1,0 +1,936 @@
+[32m✔[0m [33mConsole Ninja[0m extension is connected to [33mNext.js[0m, see [36mhttps://tinyurl.com/2vt8jxzw[0m
+▲ Next.js 16.3.6 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://172.21.112.1:3000
+✓ Ready in 54s
+⚠ Console Ninja Turbopack support is a PRO feature, [33mcurrently available to community users while in preview[0m
+✓ Running next.config.ts took 779ms
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+ GET /leadership 200 in 6.4s (next.js: 4.5s, application-code: 1934ms)
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+ GET /leadership 200 in 662ms (next.js: 53ms, application-code: 609ms)
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+Image with src "/jimmauniversity.jpg" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+ GET / 200 in 2.3s (next.js: 654ms, application-code: 1662ms)
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[browser] Image with src "/jimmauniversity.jpg" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="geist_a715...">
+                          <body
+                            className="min-h-full flex flex-col antialiased"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+[browser] Image with src "/jimmauniversity.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+ GET / 200 in 490ms (next.js: 20ms, application-code: 469ms)
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[browser] Image with src "/jimmauniversity.jpg" is using quality "85" which is not configured in images.qualities [75]. Please update your config to [75, 85].
+Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="geist_a715...">
+                          <body
+                            className="min-h-full flex flex-col antialiased"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+[browser] Image with src "/jimmauniversity.jpg" has "fill" and parent element with invalid "position". Provided "static" should be one of absolute,fixed,relative.
+✓ Compiled in 22.9s
+ GET / 200 in 144ms (next.js: 66ms, application-code: 79ms)
+ GET / 200 in 1637ms (next.js: 39ms, application-code: 1598ms)
+ GET / 200 in 45ms (next.js: 15ms, application-code: 30ms)
+ GET / 200 in 535ms (next.js: 25ms, application-code: 510ms)
+ GET /leadership 200 in 705ms (next.js: 176ms, application-code: 529ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+ GET /leadership 200 in 601ms (next.js: 167ms, application-code: 433ms)
+ GET /leadership 200 in 200ms (next.js: 38ms, application-code: 162ms)
+✓ Compiled in 2.5s
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Test\AppData\Local\Temp\next-panic-c915a0629e487d8ce97ecaffe11af3c0.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29&body=Turbopack%20version%3A%20%60a758ffcf%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0A%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A%0ACaused%20by%3A%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%0ADebug%20info%3A%0A-%20Execution%20of%20subscribe_issues_and_diags_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aserver_changed%20failed%0A-%20Execution%20of%20%2AProject%3A%3Aserver_changed%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aserver_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppProject%3A%3Aapp_module_graphs%20failed%0A-%20Execution%20of%20%2A%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aadditional_entries%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs_inner%20failed%0A-%20Execution%20of%20SingleModuleGraph%3A%3Anew_with_entries_visited_intern%20failed%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20Execution%20of%20primary_chunkable_referenced_modules%20failed%0A-%20Execution%20of%20%3CCssModule%20as%20Module%3E%3A%3Areferences%20failed%0A-%20Execution%20of%20parse_css%20failed%0A-%20Execution%20of%20%3CPostCssTransformedAsset%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20PostCssTransformedAsset%3A%3Aprocess%20failed%0A-%20Execution%20of%20config_changed%20failed%0A-%20Execution%20of%20any_source_content_changed_of_module%20failed%0A-%20Execution%20of%20source_changed%20failed%0A-%20Execution%20of%20%2AAssetContent%3A%3Afile_content%20failed%0A-%20Execution%20of%20%3CFileSource%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20%3CDiskFileSystem%20as%20FileSystem%3E%3A%3Aread%20failed%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Test\AppData\Local\Temp\next-panic-c915a0629e487d8ce97ecaffe11af3c0.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60a758ffcf%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Fpage%0A%0ACaused%20by%3A%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%0ADebug%20info%3A%0A-%20Execution%20of%20hmr_update_with_issues_operation%20failed%0A-%20Execution%20of%20Project%3A%3Ahmr_update%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppProject%3A%3Aapp_module_graphs%20failed%0A-%20Execution%20of%20%2A%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aadditional_entries%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs_inner%20failed%0A-%20Execution%20of%20SingleModuleGraph%3A%3Anew_with_entries_visited_intern%20failed%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20Execution%20of%20primary_chunkable_referenced_modules%20failed%0A-%20Execution%20of%20%3CCssModule%20as%20Module%3E%3A%3Areferences%20failed%0A-%20Execution%20of%20parse_css%20failed%0A-%20Execution%20of%20%3CPostCssTransformedAsset%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20PostCssTransformedAsset%3A%3Aprocess%20failed%0A-%20Execution%20of%20config_changed%20failed%0A-%20Execution%20of%20any_source_content_changed_of_module%20failed%0A-%20Execution%20of%20source_changed%20failed%0A-%20Execution%20of%20%2AAssetContent%3A%3Afile_content%20failed%0A-%20Execution%20of%20%3CFileSource%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20%3CDiskFileSystem%20as%20FileSystem%3E%3A%3Aread%20failed%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+✓ Compiled in 7.8s
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Test\AppData\Local\Temp\next-panic-c915a0629e487d8ce97ecaffe11af3c0.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fleadership%2Fpage&body=Turbopack%20version%3A%20%60a758ffcf%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Fleadership%2Fpage%0A%0ACaused%20by%3A%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%0ADebug%20info%3A%0A-%20Execution%20of%20get_written_endpoint_with_issues_operation%20failed%0A-%20Execution%20of%20endpoint_write_to_disk%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Fleadership%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppProject%3A%3Aapp_module_graphs%20failed%0A-%20Execution%20of%20%2A%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aadditional_entries%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs_inner%20failed%0A-%20Execution%20of%20SingleModuleGraph%3A%3Anew_with_entries_visited_intern%20failed%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20Execution%20of%20primary_chunkable_referenced_modules%20failed%0A-%20Execution%20of%20%3CCssModule%20as%20Module%3E%3A%3Areferences%20failed%0A-%20Execution%20of%20parse_css%20failed%0A-%20Execution%20of%20%3CPostCssTransformedAsset%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20PostCssTransformedAsset%3A%3Aprocess%20failed%0A-%20Execution%20of%20config_changed%20failed%0A-%20Execution%20of%20any_source_content_changed_of_module%20failed%0A-%20Execution%20of%20source_changed%20failed%0A-%20Execution%20of%20%2AAssetContent%3A%3Afile_content%20failed%0A-%20Execution%20of%20%3CFileSource%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20%3CDiskFileSystem%20as%20FileSystem%3E%3A%3Aread%20failed%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+○ Compiling /_error ...
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Test\AppData\Local\Temp\next-panic-c915a0629e487d8ce97ecaffe11af3c0.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60a758ffcf%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Fpage%0A%0ACaused%20by%3A%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppProject%3A%3Aapp_module_graphs%20failed%0A-%20Execution%20of%20%2A%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aadditional_entries%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs_inner%20failed%0A-%20Execution%20of%20SingleModuleGraph%3A%3Anew_with_entries_visited_intern%20failed%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20Execution%20of%20primary_chunkable_referenced_modules%20failed%0A-%20Execution%20of%20%3CCssModule%20as%20Module%3E%3A%3Areferences%20failed%0A-%20Execution%20of%20parse_css%20failed%0A-%20Execution%20of%20%3CPostCssTransformedAsset%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20PostCssTransformedAsset%3A%3Aprocess%20failed%0A-%20Execution%20of%20config_changed%20failed%0A-%20Execution%20of%20any_source_content_changed_of_module%20failed%0A-%20Execution%20of%20source_changed%20failed%0A-%20Execution%20of%20%2AAssetContent%3A%3Afile_content%20failed%0A-%20Execution%20of%20%3CFileSource%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20%3CDiskFileSystem%20as%20FileSystem%3E%3A%3Aread%20failed%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Test\AppData\Local\Temp\next-panic-c915a0629e487d8ce97ecaffe11af3c0.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60a758ffcf%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Fpage%0A%0ACaused%20by%3A%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppProject%3A%3Aapp_module_graphs%20failed%0A-%20Execution%20of%20%2A%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aadditional_entries%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs_inner%20failed%0A-%20Execution%20of%20SingleModuleGraph%3A%3Anew_with_entries_visited_intern%20failed%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20Execution%20of%20primary_chunkable_referenced_modules%20failed%0A-%20Execution%20of%20%3CCssModule%20as%20Module%3E%3A%3Areferences%20failed%0A-%20Execution%20of%20parse_css%20failed%0A-%20Execution%20of%20%3CPostCssTransformedAsset%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20PostCssTransformedAsset%3A%3Aprocess%20failed%0A-%20Execution%20of%20config_changed%20failed%0A-%20Execution%20of%20any_source_content_changed_of_module%20failed%0A-%20Execution%20of%20source_changed%20failed%0A-%20Execution%20of%20%2AAssetContent%3A%3Afile_content%20failed%0A-%20Execution%20of%20%3CFileSource%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20%3CDiskFileSystem%20as%20FileSystem%3E%3A%3Aread%20failed%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Test\AppData\Local\Temp\next-panic-c915a0629e487d8ce97ecaffe11af3c0.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60a758ffcf%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Fpage%0A%0ACaused%20by%3A%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppProject%3A%3Aapp_module_graphs%20failed%0A-%20Execution%20of%20%2A%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aadditional_entries%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs_inner%20failed%0A-%20Execution%20of%20SingleModuleGraph%3A%3Anew_with_entries_visited_intern%20failed%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20Execution%20of%20primary_chunkable_referenced_modules%20failed%0A-%20Execution%20of%20%3CCssModule%20as%20Module%3E%3A%3Areferences%20failed%0A-%20Execution%20of%20parse_css%20failed%0A-%20Execution%20of%20%3CPostCssTransformedAsset%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20PostCssTransformedAsset%3A%3Aprocess%20failed%0A-%20Execution%20of%20config_changed%20failed%0A-%20Execution%20of%20any_source_content_changed_of_module%20failed%0A-%20Execution%20of%20source_changed%20failed%0A-%20Execution%20of%20%2AAssetContent%3A%3Afile_content%20failed%0A-%20Execution%20of%20%3CFileSource%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20%3CDiskFileSystem%20as%20FileSystem%3E%3A%3Aread%20failed%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Test\AppData\Local\Temp\next-panic-c915a0629e487d8ce97ecaffe11af3c0.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60a758ffcf%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Fpage%0A%0ACaused%20by%3A%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppProject%3A%3Aapp_module_graphs%20failed%0A-%20Execution%20of%20%2A%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aadditional_entries%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs_inner%20failed%0A-%20Execution%20of%20SingleModuleGraph%3A%3Anew_with_entries_visited_intern%20failed%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20Execution%20of%20primary_chunkable_referenced_modules%20failed%0A-%20Execution%20of%20%3CCssModule%20as%20Module%3E%3A%3Areferences%20failed%0A-%20Execution%20of%20parse_css%20failed%0A-%20Execution%20of%20%3CPostCssTransformedAsset%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20PostCssTransformedAsset%3A%3Aprocess%20failed%0A-%20Execution%20of%20config_changed%20failed%0A-%20Execution%20of%20any_source_content_changed_of_module%20failed%0A-%20Execution%20of%20source_changed%20failed%0A-%20Execution%20of%20%2AAssetContent%3A%3Afile_content%20failed%0A-%20Execution%20of%20%3CFileSource%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20%3CDiskFileSystem%20as%20FileSystem%3E%3A%3Aread%20failed%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+
+-----
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. A panic log has been written to C:\Users\Test\AppData\Local\Temp\next-panic-c915a0629e487d8ce97ecaffe11af3c0.log.
+
+To help make Turbopack better, report this error by ]8;;https://bugs.nextjs.org/search?category=turbopack-error-report&title=Turbopack%20Error%3A%20Failed%20to%20write%20app%20endpoint%20%2Fpage&body=Turbopack%20version%3A%20%60a758ffcf%60%0ANext.js%20version%3A%20%600.0.0%60%0A%0AError%20message%3A%0A%60%60%60%0AFailed%20to%20write%20app%20endpoint%20%2Fpage%0A%0ACaused%20by%3A%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%0ADebug%20info%3A%0A-%20Execution%20of%20Project%3A%3Ahmr_version_state%20failed%0A-%20Execution%20of%20hmr_version_operation%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Aget_asset%20failed%0A-%20Execution%20of%20VersionedContentMap%3A%3Acompute_entry%20failed%0A-%20Execution%20of%20%2Aemit_assets%20failed%0A-%20Execution%20of%20all_assets_from_entries_operation%20failed%0A-%20Execution%20of%20%2Aall_assets_from_entries%20failed%0A-%20Execution%20of%20endpoint_output_assets_operation%20failed%0A-%20Execution%20of%20%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aoutput%20failed%0A-%20Failed%20to%20write%20app%20endpoint%20%2Fpage%0A-%20Execution%20of%20%2Aall_asset_paths%20failed%0A-%20Execution%20of%20%2AAppEndpointOutput%3A%3Aoutput_assets%20failed%0A-%20Execution%20of%20AppEndpoint%3A%3Aoutput%20failed%0A-%20Execution%20of%20AppProject%3A%3Aapp_module_graphs%20failed%0A-%20Execution%20of%20%2A%3CAppEndpoint%20as%20Endpoint%3E%3A%3Aadditional_entries%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs%20failed%0A-%20Execution%20of%20ModuleGraph%3A%3Afrom_graphs_inner%20failed%0A-%20Execution%20of%20SingleModuleGraph%3A%3Anew_with_entries_visited_intern%20failed%0A-%20%5Bproject%5D%2Fapp%2Fglobals.css%20%5Bapp-client%5D%20%28css%29%0A-%20Execution%20of%20primary_chunkable_referenced_modules%20failed%0A-%20Execution%20of%20%3CCssModule%20as%20Module%3E%3A%3Areferences%20failed%0A-%20Execution%20of%20parse_css%20failed%0A-%20Execution%20of%20%3CPostCssTransformedAsset%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20PostCssTransformedAsset%3A%3Aprocess%20failed%0A-%20Execution%20of%20config_changed%20failed%0A-%20Execution%20of%20any_source_content_changed_of_module%20failed%0A-%20Execution%20of%20source_changed%20failed%0A-%20Execution%20of%20%2AAssetContent%3A%3Afile_content%20failed%0A-%20Execution%20of%20%3CFileSource%20as%20Asset%3E%3A%3Acontent%20failed%0A-%20Execution%20of%20%3CDiskFileSystem%20as%20FileSystem%3E%3A%3Aread%20failed%0A-%20reading%20file%20%22%5C%5C%5C%5C%3F%5C%5CC%3A%5C%5CUsers%5C%5CTest%5C%5CDesktop%5C%5Cjimma_low_club%5C%5Cpostcss.config.mjs%22%0A-%20Operation%20did%20not%20complete%20successfully%20because%20the%20file%20contains%20a%20virus%20or%20potentially%20unwanted%20software.%20%28os%20error%20225%29%0A%60%60%60&labels=Turbopack,Turbopack%20Panic%20Backtrace\clicking here.]8;;\
+-----
+
+ GET /leadership 500 in 18.7s (next.js: 14.8s, application-code: 3.9s)
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[browser] Uncaught Error: An unexpected Turbopack error occurred. Please see the output of `next dev` for more details.
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+ GET /leadership 200 in 13.4s (next.js: 12.5s, application-code: 918ms)
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/leadership" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="geist_a715...">
+                          <body
+                            className="min-h-full flex flex-col antialiased"
+-                           cz-shortcut-listen="true"
+                          >
+                  ...
+ 
+[browser] Image with src "/logo.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+ GET /contact 200 in 1394ms (next.js: 1305ms, application-code: 89ms)
+[browser] Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+ GET /contact 200 in 267ms (next.js: 36ms, application-code: 231ms)

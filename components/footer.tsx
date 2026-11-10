@@ -11,8 +11,8 @@ const PROGRAM_LINKS = [
 
 const CONTACT = {
   location: 'Faculty of Law, Jimma University, Jimma, Ethiopia',
-  email: 'julsa@ju.edu.et',
-  phone: '+251 47 111 0000',
+  email: 'julsaleads@gmail.com',
+  phone: '0914428530',
 }
 
 const SOCIALS = [

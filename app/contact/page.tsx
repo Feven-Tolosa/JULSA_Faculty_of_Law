@@ -84,7 +84,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className='font-semibold'>Email</h3>
                   <p className='mt-1 text-sm text-slate-500'>
-                    Email address coming soon
+                    julsaleads@gmail.com
                   </p>
                 </div>
               </div>
