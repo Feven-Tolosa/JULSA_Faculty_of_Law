@@ -6,12 +6,12 @@ import Reveal from "./reveal";
 
 const CONTACT_INFO = [
   {
-    label: "Campus Office",
-    value: "Student Center, Jimma University Main Campus, Jimma, Ethiopia",
+    label: 'Campus Office',
+    value: 'Student Center, Jimma University Main Campus, Jimma, Ethiopia',
   },
-  { label: "Email Us", value: "julsa@ju.edu.et" },
-  { label: "Call Us", value: "+251 47 111 0000" },
-];
+  { label: 'Email Us', value: 'julsaleads@gmail.com' },
+  { label: 'Call Us', value: '0914428530' },
+]
 
 const HOURS = [
   { day: "Monday — Friday", time: "9:00 AM — 5:00 PM" },

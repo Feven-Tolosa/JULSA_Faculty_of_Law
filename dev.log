@@ -934,3 +934,61 @@ Import trace:
 
 
  GET /contact 200 in 267ms (next.js: 36ms, application-code: 231ms)
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+ GET /contact 200 in 170ms (next.js: 20ms, application-code: 150ms)
+⚠ ./app/globals.css:8:7
+Warning: Parsing CSS source code failed
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Unknown at rule: @theme
+
+Generated code of PostCSS transform of file content of app/globals.css:
+./app/globals.css:8:7
+  [90m 6 |[0m }
+  [90m 7 |[0m
+[33m[1m>[0m [90m 8 |[0m @theme {
+  [90m   |[0m       [33m[1m^[0m
+  [90m 9 |[0m   --color-background: [36mvar[0m(--background);
+  [90m10 |[0m   --color-foreground: [36mvar[0m(--foreground);
+  [90m11 |[0m   --font-sans: [36mvar[0m(--font-geist-sans);
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+ GET /contact 200 in 188ms (next.js: 23ms, application-code: 165ms)
